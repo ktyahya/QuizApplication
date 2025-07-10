@@ -119,13 +119,8 @@ Contributions, suggestions, and improvements are welcome! Fork the repository an
 
 ## 🔗 Author & Contact
 
-Created by \[Your Name]
-📧 Email: [your.email@example.com](mailto:your.email@example.com)
-🌐 GitHub: [github.com/yourusername](https://github.com/yourusername)
+Created by \[]YAHYA KT
+📧 Email: [your.email@example.com](mailto:ktyahya792.email@example.com)
 
----
 
-> “Learning made fun – one quiz at a time!”
-
-```
 
