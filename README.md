@@ -119,8 +119,8 @@ Contributions, suggestions, and improvements are welcome! Fork the repository an
 
 ## 🔗 Author & Contact
 
-Created by \[]YAHYA KT
-📧 Email: [your.email@example.com](mailto:ktyahya792.email@example.com)
+Created by \YAHYA KT
+📧 Email: [ktyahya792@gmail.com](mailto:ktyahya792.email@example.com)
 
 
 
