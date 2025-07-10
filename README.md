@@ -84,7 +84,7 @@ OnlineQuizApplication/
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/online-quiz-application.git
-````
+
 
 2. Open the project in **VS Code** or **IntelliJ**.
 
@@ -129,7 +129,3 @@ Created by \[Your Name]
 
 ```
 
----
-
-Let me know if you'd like a logo or project banner to add at the top of the README!
-```
