@@ -119,7 +119,7 @@ Contributions, suggestions, and improvements are welcome! Fork the repository an
 
 ## 🔗 Author & Contact
 
-Created by \YAHYA KT
+Created by YAHYA KT
 📧 Email: [ktyahya792@gmail.com](mailto:ktyahya792.email@example.com)
 
 
