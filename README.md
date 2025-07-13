@@ -1,126 +1,115 @@
-# 🧠 Online Quiz Application
+# Online Quiz Application Using JAVA
 
-A Java-based quiz platform with user authentication, admin quiz management, real-time feedback, and performance tracking.
-
----
-
-## 📌 Description
-
-The **Online Quiz Application** allows users to take quizzes on various topics while enabling administrators to manage the quiz content. The system offers real-time feedback on answers, tracks user scores, and optionally displays a leaderboard to foster competition. It is designed to be user-friendly and secure, with data persistence using a relational database.
+A modern JavaFX-based Online Quiz Application designed with clean UI/UX, animation effects, and essential features like login, timed quizzes, answer evaluation, and score tracking.
 
 ---
 
-## ✅ Key Features
+## 📌 Features
 
-- 🔐 **User Authentication**  
-  Secure login and registration system with hashed passwords.
-
-- 🛠️ **Quiz Management (Admin)**  
-  Add, edit, and delete quizzes with multiple-choice questions.
-
-- 🧑‍🎓 **Quiz Taking (User)**  
-  Attempt quizzes and receive immediate feedback after each question.
-
-- 📊 **Score Tracking**  
-  View final scores, attempt history, and track progress over time.
-
-- 🏆 **Leaderboard (Optional)**  
-  Display top scorers for individual quizzes or overall performance.
-
-- 🎨 **User Interface**  
-  Built using **JavaFX / Swing** for an intuitive and consistent experience.
-
-- 🗃️ **Database Integration**  
-  Data stored in **MySQL / SQLite**, using **JDBC** for all CRUD operations.
-
-- 🔐 **Security**  
-  Implements password hashing and input validation to ensure data integrity.
-
-- ⏱️ **Additional Features (Optional)**  
-  Timer-based quizzes, random question selection, and difficulty levels.
+- 🔐 User login interface with validation  
+- ❓ Multiple-choice quiz interface  
+- ⏲️ Countdown timer per question or quiz  
+- 📊 Automatic score calculation  
+- 🧠 Instant feedback after each question  
+- 🔁 Option to restart the quiz  
+- 🎨 Polished UI with custom CSS animations
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ Technologies Used
 
-| Layer            | Technology              |
-|------------------|--------------------------|
-| Frontend / UI    | JavaFX / Swing           |
-| Backend Logic    | Core Java                |
-| Database         | MySQL / SQLite           |
-| Connectivity     | JDBC                     |
-| Security         | Java libraries (e.g., MessageDigest) |
-| Development IDE  | VS Code / IntelliJ IDEA  |
+- **Java 17+**
+- **JavaFX 21.0.2**
+- **FXML** for UI layout
+- **CSS** for design and animation
+- **SceneBuilder** (optional)
 
 ---
 
-## 📁 Folder Structure (Suggested)
+## 🗂️ Project Structure
 
 ```
-
-OnlineQuizApplication/
+/Online Quiz Application Using Java
+├── .vscode/
+│   ├── java-formatter.xml
+│   ├── launch.json
+│   └── settings.json
 │
-├── src/
-│   ├── auth/                # User login/signup logic
-│   ├── admin/               # Admin quiz management
-│   ├── quiz/                # Quiz questions and logic
-│   ├── db/                  # Database connection and queries
-│   ├── models/              # Java classes for User, Quiz, Question etc.
-│   └── main.java            # Main launcher
+├── application/
+│   ├── LoginScene.fxml
+│   ├── LoginScene.java
+│   ├── Main.java
+│   ├── QuizScene.fxml
+│   ├── QuizScene.java
+│   ├── ResultScene.fxml
+│   └── ResultScene.java
+│
+├── model/
+│   ├── Question.java
+│   └── UserSession.java
+│
+├── out/
+│   ├── application/
+│   ├── model/
+│   ├── resources/
+│   └── util/
 │
 ├── resources/
-│   └── fxml/                # JavaFX UI files (if any)
+│   └── styles.css
+│
+├── util/
+│   └── QuestionBank.java
 │
 ├── README.md
-├── database.sql             # SQL schema
-└── LICENSE (optional)
-
-````
+└── run.bat
+```
 
 ---
 
-## 🧪 How to Run
+## 🚀 How to Compile & Run
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/online-quiz-application.git
+### ✅ 1. Compile
 
+```bash
+javac --module-path "C:\javafx-sdk-21.0.2\lib" --add-modules javafx.controls,javafx.fxml -d out application\*.java model\*.java util\*.java
+```
 
-2. Open the project in **VS Code** or **IntelliJ**.
+### ✅ 2. Run
 
-3. Configure your database (MySQL or SQLite) using the `database.sql` script.
+```bash
+java --module-path "C:\javafx-sdk-21.0.2\lib" --add-modules javafx.controls,javafx.fxml -cp out application.Main
+```
 
-4. Update your DB credentials in the connection class (e.g., `DBConnection.java`).
-
-5. Compile and run the project:
-
-   * Using terminal:
-
-     ```bash
-     javac -d bin src/**/*.java
-     java -cp bin main.Main
-     ```
-
-6. Start using the application!
+> ⚠️ Ensure JavaFX SDK is properly installed and the path is correctly set in the above commands.
 
 ---
 
-## 📌 License
+### ✅ Option 2: Use the `run.bat` File (Recommended)
 
-This project is open-source and available under the [MIT License](LICENSE).
+Just double-click `run.bat` (or run it in terminal):
+
+```bash
+run.bat
+```
+
+Make sure to update the JavaFX path if it's different in your system.
 
 ---
 
-## 🙌 Contributions
+## 📂 `run.bat` Contents
 
-Contributions, suggestions, and improvements are welcome! Fork the repository and make a pull request 🚀
+```bat
+@echo off
+set FX_PATH=C:\javafx-sdk-21.0.2\lib
+javac --module-path "%FX_PATH%" --add-modules javafx.controls,javafx.fxml -d out application\*.java
+java --module-path "%FX_PATH%" --add-modules javafx.controls,javafx.fxml -cp out application.Main
+pause
+```
+
+Save this in the root of your project as `run.bat`.
 
 ---
 
-## 🔗 Author & Contact
+## 👤 Author
 
-Created by YAHYA KT
-📧 Email: [ktyahya792@gmail.com](mailto:ktyahya792.email@example.com)
-
-
-
+**YAHYA K T**
